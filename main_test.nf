@@ -52,6 +52,9 @@ workflow {
     results_ch = CONVERTTOUPPER(letters_ch.flatten())
     results_ch.view{ it }
 }
-
+report {
+    // Print completion message to console
+    println "Pipeline execution completed successfully!"
+}
 
 
