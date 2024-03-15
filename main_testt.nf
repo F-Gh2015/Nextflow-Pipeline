@@ -7,7 +7,7 @@ params.outdir = "az://biosustaindls/development/results"
 //println "projectDir: $projectDir"
 
 //Read Azure storage credentials from credentials.json
-def azureCredentials = new JsonSlurper().parseText(new File("./credentials.json").text)
+def azureCredentials = new JsonSlurper().parseText(new File("./credentials_testt.json").text)
 def storageAccountName = azureCredentials.biosustaindls.storageAccountName
 def eventHubsConnectionString = azureCredentials.biosustaindls.eventGridEndpoint
 
