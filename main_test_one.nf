@@ -22,7 +22,7 @@ process SPLITLETTERS {
 
 process CONVERTTOUPPER {
     //container "nextflow/examples:latest"
-    publishDir "${params.outdir}/results_test", mode:'copy'
+    publishDir "${params.outdir}/results", mode:'copy'
     input:
     path y
 
